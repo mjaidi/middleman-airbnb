@@ -7,7 +7,7 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title></title>
-    <link href="../stylesheets/application-d95ec8b0.css" rel="stylesheet" />
+    <link href="../stylesheets/application-22e1eca4.css" rel="stylesheet" />
     <script src="../javascripts/application-93de88c9.js"></script>
     <link href="../images/favicon-f15af148.png" rel="icon" type="image/png" />
   </head>
@@ -58,7 +58,15 @@
   <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/paris');">
     <p id="city">PARIS</p>
     <div class="top-content">
-      <h4>Rating: 4/5</h4>
+      <h4>Rating:  
+        <i class='fas fa-star yellow'></i> 
+ 
+        <i class='fas fa-star yellow'></i> 
+ 
+        <i class='fas fa-star yellow'></i> 
+ 
+        <i class='fas fa-star yellow'></i> 
+      </h4>
       <h4>Wifi</h4>
     </div>
     <div class="card-content">
@@ -67,7 +75,31 @@
       <p>Beautiful appartment overlooking la Seine</p>
     </div>
   </div>
+
+ <form action="" class="form">
+          <div class="form-group">
+            <label for="checkin">Checkin Date</label>
+            <input type="text" class="form-control" id="checkin" placeholder="checkin">
+          </div>
+          <div class="form-group">
+            <label for="checkout">Checkout Date</label>
+            <input type="text" class="form-control" id ="checkout" placeholder="checkout">
+          </div>
+          <div class="form-group">
+            <label for="choice">Number of People</label>
+            <select name="" class="form-control" id="choice">
+              <option value="">1 person</option>
+              <option value="">2 people</option>
+              <option value="">3 people</option>
+            </select>
+          </div>           
+          <input type="submit" class="btn btn-primary btn-md" value="Search">
+  </form>>
+
+
 </div>
+
+
     <div class="footer">
   <div class="footer-links">
     <a href="#"><i class="fab fa-github"></i></a>
