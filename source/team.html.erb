@@ -1,0 +1,16 @@
+---
+title: Le Wagon - Team
+---
+
+<div id="team" class="text-center">
+  <div class="container">
+    <div class="row">
+    <% {"majid.jpeg" => "Majid Jaidi", "esther.jpeg" => "Esther Montfort", "benche.png" => "Yasmina Benchekroun", "omar.jpeg" => "Omar Kazeb"}.each do |link, name| %>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+        <%= image_tag "#{link}", class: "img-circle" %>
+        <h3><%= name %></h3>
+        </div>
+    <% end %>
+    </div>
+  </div>
+</div>
