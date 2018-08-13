@@ -21,8 +21,6 @@ activate :deploy do |deploy|
   deploy.deploy_method = :git
 end
 
-["papillard", "ssaunier", "mjaidi", "benchey"].each do |name|
+data.cards.each do |name, _info|
   proxy "/cards/#{name}.html", "/cards/show.html", locals: { owner: name }, ignore: true
 end
-
-redirect "/localhost:4567/", to: "https://mjaidi.github.io/middleman-airbnb/"
