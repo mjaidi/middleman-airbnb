@@ -20,3 +20,9 @@ activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
 end
+
+["papillard", "ssaunier", "mjaidi", "benchey"].each do |name|
+  proxy "/cards/#{name}.html", "/cards/show.html", locals: { owner: name }, ignore: true
+end
+
+redirect "/localhost:4567/", to: "https://mjaidi.github.io/middleman-airbnb/"

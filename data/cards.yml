@@ -1,18 +1,28 @@
-- name: 'Sébastien'
+ssaunier: 
+  name: 'Sébastien'
   github_nickname: 'ssaunier'
   city: 'Berlin'
-- name: 'Boris'
+  description: 'Charming flat with an amazing view'
+  wifi: true
+  rating: 3
+papillard:
+  name: 'Boris'
   github_nickname: 'Papillard'
   city: 'London'
-- name: 'Majid Jaidi'
+  description: 'Small home on the outscirts of london'
+  wifi: false
+  rating: 2
+mjaidi:
+  name: 'Majid'
   github_nickname: 'mjaidi'
   city: 'Casablanca'
-- name: 'Yasmina'
+  description: 'Georgeous villa with a veiw on the ocean'
+  wifi: true
+  rating: 5
+benhey:
+  name: 'Yasmina'
   github_nickname: 'benchey'
   city: 'Paris'
-- name: 'Omar'
-  github_nickname: '0Kaz'
-  city: 'Shanghai'
-- name: 'Lynn'
-  github_nickname: 'lynndesouza'
-  city: 'Barcelona'
+  description: 'Beautiful appartment overlooking la Seine'
+  wifi: true
+  rating: 4
