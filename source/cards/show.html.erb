@@ -7,7 +7,10 @@
   <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%=flat.city.downcase%>');">
     <p id="city"><%= flat.city.upcase%></p>
     <div class="top-content">
-      <h4>Rating: <%= flat.rating %>/5</h4>
+      <h4>Rating: <% flat.rating.times do %> 
+        <i class='fas fa-star yellow'></i> 
+        <% end %>
+      </h4>
       <h4><%= flat.wifi == true ? "Wifi" : "No Wifi" %></h4>
     </div>
     <div class="card-content">
@@ -16,4 +19,27 @@
       <p><%= flat.description %></p>
     </div>
   </div>
+
+ <form action="" class="form">
+          <div class="form-group">
+            <label for="checkin">Checkin Date</label>
+            <input type="text" class="form-control" id="checkin" placeholder="checkin">
+          </div>
+          <div class="form-group">
+            <label for="checkout">Checkout Date</label>
+            <input type="text" class="form-control" id ="checkout" placeholder="checkout">
+          </div>
+          <div class="form-group">
+            <label for="choice">Number of People</label>
+            <select name="" class="form-control" id="choice">
+              <option value="">1 person</option>
+              <option value="">2 people</option>
+              <option value="">3 people</option>
+            </select>
+          </div>           
+          <input type="submit" class="btn btn-primary btn-md" value="Search">
+  </form>>
+
+
 </div>
+

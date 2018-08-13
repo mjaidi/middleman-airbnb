@@ -21,6 +21,10 @@
         margin-top: 0;
         margin-bottom: 10px;
       }
+      .yellow {
+        color: $yellow;
+        font-size: 15px;
+      }
   }
     .card-content {
       position: absolute;
@@ -33,6 +37,28 @@
       }
     }
   }
-  
+  form {
+    margin: 30px;
+      padding: 20px;
+
+    .form-group {
+      color: $grey;
+      text-align: left;
+
+      &:focus-within {
+        color: black;
+
+      }
+    }
+
+    .form-control {
+      color: black;
+    }
+    .btn {
+      width: 100%;   
+        }
+  }  
+
 
 }
+
